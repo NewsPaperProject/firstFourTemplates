@@ -1,0 +1,25 @@
+.makeContentVertical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.makeContentHori{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paratext{
+    font-size: 10px;
+}
+
+.headerContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid blue;
+}

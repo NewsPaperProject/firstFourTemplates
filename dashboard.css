@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#MainOuterDashboardContainer{
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+    display: flex;
+}
+#sideNavBar{
+    width: 15%;
+    height: 100%;
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#sideNavBar img{
+    width: 100%;
+    height: auto;
+}
+#sideNavBar ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    list-style-type: none;
+}
+#sideNavBar ul li a{
+    padding: 5px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .5s ease all;
+}
+#sideNavBar ul li a:hover{
+    background-color: black;
+    color: white;
+
+}
+#userAndPfContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+#userAndPfContainer img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#userAndPfContainer p{
+    rotate: 90deg;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+#mainDashboardContentContainer{
+    width: 85%;
+    height: 100vh;
+    background-color: black;
+    padding: 10px 20px;
+}
+#mainDashboardContentContainer h1{
+    font-size: 35px;
+    color: yellow;
+}
+
+#newsClockContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+#newsClockContainer h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#innernewsClockContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#innernewsClockContainer iframe{
+    width: 75%;
+    height: 40vh;
+    border-radius: 20px;
+}
+#innernewsClockContainer #clockContainer{
+    width: 25%;
+    height: 40vh;
+    background-color: gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+}
+#innernewsClockContainer #clockContainer #time{
+    font-size: 30px;
+}
+#innernewsClockContainer #clockContainer #date{
+    font-size: 20px;
+}
+
+.analog-clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #000;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background-color: yellow;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.hour-hand {
+    width: 4px;
+    height: 50px;
+    margin-left: -2px;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 70px;
+    margin-left: -1.5px;
+}
+
+.second-hand {
+    width: 2px;
+    height: 80px;
+    margin-left: -1px;
+    background-color: #ff0000;
+}
+
+.center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.clock-numbers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: yellow;
+    text-shadow: 0 0 5px yellow;
+}
+
+.clock-number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.2em;
+}
+
+.clock-number span {
+    display: inline-block;
+    transform: rotate(calc(-1 * var(--rotation)));
+    padding-top: 10px;
+}
+
+
+
+#templatesOuterContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+#templatesOuterContainer h3{
+    font-size: 30px;
+    color: white;
+}
+#templatesInnerContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+#templatesInnerContainer a{
+    width: 15%;
+    height: 30vh;
+    text-decoration: none;
+}
+#templatesInnerContainer .newsPaperCard{
+    width: 100%;
+    height: 100%;
+    /* background-color: gray; */
+    background-image: url('./Images/newsCard_bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

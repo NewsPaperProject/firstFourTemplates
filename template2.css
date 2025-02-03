@@ -1,0 +1,741 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+body p{
+    text-align: justify;
+}
+
+#pageOne{
+    width: 735px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+#HeadingOuterContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#HeadingOuterContainer img{
+    width: 20%;
+    height: auto;
+}
+#HeadingOuterContainer #headingInnerContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HeadingOuterContainer #headingInnerContainer h1{
+    font-size: 86px;
+}
+#underHeadingSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#underHeadingSection #redContainer{
+    width: 20%;
+    background-color: red;
+    padding: 2px;
+}
+#underHeadingSection #redContainer p{
+    font-size: 12px;
+    color: rgb(224, 220, 220);
+    text-align: center;
+}
+#underHeadingSection #blueContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 2px;
+}
+#underHeadingSection #blueContainer p{
+    font-size: 12px;
+    color: rgb(224, 220, 220);
+}
+#underHeadingSection #blueContainer #phoneEmailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#firstNewsContainerSectionPageOne{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#firstNewsContainerSectionPageOne #leftHalf{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+    text-wrap: wrap;
+    background-color: rgb(244, 200, 200);
+}
+#firstNewsContainerSectionPageOne #leftHalf img{
+    width: 100%;
+    height: auto;
+}
+#firstNewsContainerSectionPageOne #leftHalf p{
+    font-size: 10px;
+}
+
+#firstNewsContainerSectionPageOne #rightHalf{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 10px; */
+}
+#firstNewsContainerSectionPageOne #rightHalf h1{
+    font-size: 16px;
+}
+#firstNewsContainerSectionPageOne #rightHalf img{
+    width: 100%;
+    height: auto;
+}
+#secondNewsContainerSectionPageOne{
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+#secondnewsLeftContainer{
+    width: 43%;
+    height: auto;
+}
+#secondnewsLeftContainer h1{
+    font-size: 20px;
+}
+#secondNewsInnerContainerLeft{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+#secondNewsInnerContainerLeft #elonParaContainer{
+    width: 70%;
+    height: 100%;
+}
+
+#secondNewsInnerContainerLeft #elonParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#elonParaInnerContainer{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+#elonParaInnerContainer p{
+    height: auto;
+}
+
+#secondNewsRightContainer{
+    width: 50%;
+    height: auto;
+}
+#secondNewsRightContainer h1{
+    font-size: 18px;
+}
+#secondNewsRightInnerContainer{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+#secondNewsRightInnerContainer #aliParaImgContainer{
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+}
+#innerAliparaContainer{
+    gap: 5px;
+}
+#secondNewsRightInnerContainer #aliParaImgContainer img{
+    width: 100%;
+    height: auto;
+}
+#secondNewsRightInnerContainer #aradhyaParaImgContainer{
+    width: 50%;
+    height: 100%;
+} 
+
+#aradhyaParaImgContainer{
+    width: 50%;
+    height: 100%;
+    gap: 5px;
+}
+#inneraradhyaImgContainer{
+    width: 50%;
+    height: 100%;
+}
+#inneraradhyaImgContainer img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* Page Two  */
+#pageTwo{
+    width: 735px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+#upperNewsContainerPageTwo{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    gap: 10px;
+}
+#upperNewsrightContainerpageTwo{
+    width: 70%;
+    height: auto;
+}
+#upperNewsrightContainerpageTwo h1{
+    font-size: 19px;
+}
+#upperNewsrightContainerpageTwo h2{
+    font-size: 9px;
+    color: blue ;
+}
+#upperNewsRightInnerContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#upperNewsInnerContainerPageTwo{
+    width: 100%;
+    height: auto;
+}
+#upperNewsRightInnerFirstHalf{
+    width: 40%;
+    height: 100%;
+}
+#upperNewsRightInnerFirstHalf img{
+    width: 100%;
+    height: auto;
+}
+#upperNewsRightInnerFirstHalf #innerParaContainerFirstHalf{
+    gap: 10px;
+}
+#upperNewsRightInnerSecondHalf{
+    width: 60%;
+    height: 100%;
+}
+#upperNewsParaContainerSecondHalf{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#upperNewsGreenPartContainer{
+    width: 100%;
+    height: auto;
+}
+#upperNewsGreenPartContainer h2{
+    font-size: 14px;
+    text-align: center;
+}
+#greenInnerContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#greenImgParaContainer{
+    width: 50%;
+    height: auto;
+}
+#greenImgParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#greenImgParaInnerContainer{
+    gap: 5px;
+}
+#greenParaContainer{
+    gap: 5px;
+}
+
+#upperNewsLeftContainer{
+    width: 30%;
+    height: auto;
+}
+#upperNewsLeftContainer h1{
+    font-size: 20px;
+}
+#upperNewsLeftContainer img{
+    width: 100%;
+    height: auto;
+}
+#upperNewsLeftContainer #upperNewsLeftParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+
+#lowerNewsContainerPageTwo{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#lowerNewsContainerFirstHalf{
+    width: 50%;
+    height: auto;
+}
+#lowerNewsContainerFirstHalf h1{
+    font-size: 14px;
+}
+#lowerNewsContainerInnerFirstHalf{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#pappuImgParaContainer{
+    width: 60%;
+    height: auto;
+}
+#pappuInnerParaContainer{
+    gap: 3px;
+}
+#pappuImgParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#pappussidecontainer{
+    width: 40%;
+    height: auto;
+}
+
+#lowerNewsContainerSecondHalf{
+    width: 50%;
+    height: auto;
+}
+#lowerNewsContainerSecondHalf h1{
+    font-size: 14px;
+}
+#lowerNewsContainerSecondHalf h2{
+    font-size: 12px;
+    text-align: center;
+    color: blue;
+}
+#lowerNewsInnerContainerSecondHalf{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#lowerNewsInnerContainerSecondHalf p{
+    width: 25%;
+    height: auto;
+}
+#lowerNewsInnerContainerSecondHalf #uddhavImgParaContainer{
+    width: 50%;
+    height: auto;
+}
+#lowerNewsInnerContainerSecondHalf #uddhavImgParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#lowerNewsInnerContainerSecondHalf #uddhavImgParaContainer #uddavInnerParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#lowerNewsInnerContainerSecondHalf #uddhavImgParaContainer #uddavInnerParaContainer p{
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* page Three  */
+#pageThree{
+    width: 735px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+#pageThreeUpperNewsContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+#pageThreeUpperFirstHalf{
+    width: 25%;
+    height: auto;
+}
+#pageThreeUpperFirstHalf h1{
+    font-size: 18px;
+}
+#pageThreeUpperFirstHalf img{
+    width: 100%;
+    height: auto;
+}
+
+#pageThreeUpperSecondHalf{
+    width: 36%;
+    height: auto;
+}
+#pageThreeUpperSecondHalf h1{
+    font-size: 18px;
+}
+#pageThreeUpperSecondHalf img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+#pageThreeUpperSecondHalf #upperSecondHalfParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#pageThreeUpperThirdHalf{
+    width: 36%;
+    height: auto;
+    padding: 5px 10px;
+    background-color: rgb(233, 186, 99);
+}
+#pageThreeUpperThirdHalf h1{
+    font-size: 18px;
+}
+#pageThreeUpperThirdHalf img{
+    width: 100%;
+    height: auto;
+}
+#upperThirdHalfParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+
+#pageThreeLowerContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#pageThreeLowerFirstHalf{
+    width: 65%;
+    height: auto;
+}
+#pageThreeLowerFirstHalf h1{
+    font-size: 16px;
+    word-spacing: 2px;
+}
+#pageThreeLowerFirstInnerContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#pageThreeLowerFirstInnerContainer p{
+    width: 30%;
+    height: auto;
+}
+#pageThreeLowerFirstInnerContainer #pageThreelowerMiddleFirstHalf{
+    width: 40%;
+    height: auto;
+}
+#pageThreeLowerFirstInnerContainer #pageThreelowerMiddleFirstHalf img {
+    width: 100%;
+    height: auto;
+}
+#pageThreeLowerFirstInnerContainer #pageThreelowerMiddleFirstHalf p{
+    width: 100%;
+}
+#pageThreeLowerSecondHalf{
+    width: 35%;
+    height: auto;
+    gap: 5px;
+}
+#pageThreeSecondFirstInnerHalf{
+    width: 60%;
+    height: auto;
+    gap: 5px;
+}
+#pageThreeSecondFirstInnerHalf h1{
+    font-size: 10px;
+}
+#pageThreeSecondFirstInnerHalf img{
+    width: 100%;
+    height: auto;
+}
+#pageThreeSecondFirstInnerParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#pageThreeLowerSecondHalfParaContainer{
+    width: 40%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Page Four  */
+#pageFour{
+    width: 735px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+
+#pageFourImgContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+#pageFourImgContainer img{
+    width: 100%;
+    height: auto;
+}
+#pageFourLowerContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#firstHalfLowerContainerPageFour{
+    width: 50%;
+    height: auto;
+}
+#firstHalfLowerContainerPageFour h1{
+    font-size: 18px;
+}
+#innerFourfirstHalf{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#imgParaInnerFourLowerContainer{
+    width: 60%;
+    height: auto;
+}
+#imgParaInnerFourLowerContainer img{
+    width: 100%;
+    height: auto;
+}
+#cricketParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#cricketSideparaContainerFour{
+    width: 40%;
+    height: auto;
+}
+
+#secondHalfLowerPageFour{
+    width: 50%;
+    height: auto;
+}
+#secondHalfLowerPageFour h1{
+    font-size: 18px;
+}
+#lowerFoursecondMainContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#innerSecondFourimgParaContainer{
+    width: 30%;
+    height: auto;
+}
+#innerSecondFourimgParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#innersecondDFourParaContainer{
+    width: 70%;
+    height: auto;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Page Five  */
+#pageFive{
+    width: 735px;
+    height: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+#pageFiveUpperContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+#pageFiveUpperLeftPart{
+    width: 50%;
+    height: auto;
+}
+#pageFiveUpperLeftPart h1{
+    font-size: 18px;
+    text-align: center;
+    word-spacing: 5px;
+}
+#innerPageFiveUpperleftPart{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#fiveLeftUpperParaContainer{
+    width: 30%;
+    height: auto;
+}
+#pageFiveUpperImgParaContainer{
+    width: 70%;
+    height: auto;
+}
+#pageFiveUpperImgParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#innerFiveUpperPara{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+
+#pageFiveUpperRightPart{
+    width: 50%;
+    height: auto;
+    gap: 5px;
+    padding: 10px;
+    background-color: skyblue;
+}
+#fiveUpperRightFirstHalf{
+    width: 50%;
+    height: auto;
+}
+#fiveUpperRightFirstHalf h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#fiveUpperRightFirstHalf img{
+    width: 100%;
+    height: auto;
+}
+#fiveUpperRightSecondHalf{
+    width: 50%;
+    height: auto;
+}
+
+
+
+#pageFiveLowerContainer{
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+#pageFiveLowerFirstHalf{
+    width: 45%;
+    height: auto;
+}
+#pageFiveLowerFirstHalf h1{
+    font-size: 14px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    word-spacing: 3px;
+}
+#pageFiveInnerLowerHalf{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}
+#pageFiveLowerImgParaContainer{
+    width: 60%;
+    height: auto;
+}
+#pageFiveLowerImgParaContainer img{
+    width: 100%;
+    height: auto;
+}
+#pageFiveLowerParaContainer{
+    width: 40%;
+    height: auto;
+}
+
+#pageFiveLowerRightPart{
+    width: 55%;
+    height: auto;
+}
+#pageFiveLowerRightPart h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#pageFiveLowerRightPart img{
+    width: 100%;
+    height: auto;
+}
+
+#pageFiveRightLowerParaContainer{
+    width: 100%;
+    height: auto;
+    gap: 5px;
+}

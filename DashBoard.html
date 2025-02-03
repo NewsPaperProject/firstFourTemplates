@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="commonCss.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div id="MainOuterDashboardContainer">
+        <nav id="sideNavBar">
+            <img src="./Images/news_paper_logo.png" alt="">
+            <ul>
+                <li><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="calendar-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="grid-outline"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="settings-outline"></ion-icon></a></li>
+            </ul>
+
+            <div id="userAndPfContainer">
+                <img src="https://img.freepik.com/premium-vector/happy-kids-avatars-cute-children-smiling-boy-girl-rounds-vector-set-illustration-girl-boy_1114531-6176.jpg?semt=ais_hybrid" alt="">
+                <p>Kunal</p>
+            </div>
+        </nav>
+
+        <section id="mainDashboardContentContainer">
+            <h1>Hi Kunal !!!</h1>
+            <div id="newsClockContainer">
+                <h3>Live News</h3>
+                <div id="innernewsClockContainer">
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xmm3Kr5P1Uw?si=9OuPBwK3UH-aMVp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <div id="clockContainer">
+                        <div class="analog-clock">
+                            <div class="clock-numbers">
+                                <!-- Numbers will be added by JavaScript -->
+                            </div>
+                            <div class="hand hour-hand"></div>
+                            <div class="hand minute-hand"></div>
+                            <div class="hand second-hand"></div>
+                            <div class="center-dot"></div>
+                        </div>
+                        <div id="time">00:00:00</div>
+                        <div id="date">Monday,January 1, 2023</div>
+                    </div>
+                </div>
+            </div>
+            <div id="templatesOuterContainer">
+                <h3>NewsPaper Templates</h3>
+                <div id="templatesInnerContainer">
+                    <a href="">
+                        <div class="newsPaperCard"></div>
+                    </a>
+                    <a href="">
+                        <div class="newsPaperCard"></div>
+                    </a>
+                    <a href="">
+                        <div class="newsPaperCard"></div>
+                    </a>
+                    <a href="">
+                        <div class="newsPaperCard"></div>
+                    </a>  
+                    <a href="">
+                        <div class="newsPaperCard"></div>
+                    </a>  
+                    <a href="">
+                        <div class="newsPaperCard"></div>
+                    </a>   
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+            // Digital Clock        
+            document.getElementById('time').textContent =
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('date').textContent = now.toLocaleDateString('en-US', options);
+
+            // Analog Clock Hands Rotation
+            const hourDeg = (hours % 12) * 30 + minutes * 0.5; // 360° divided into 12 hours
+            const minuteDeg = minutes * 6 + seconds * 0.1; // 360° divided into 60 minutes
+            const secondDeg = seconds * 6; // 360° divided into 60 seconds
+
+            document.querySelector('.hour-hand').style.transform = `rotate(${hourDeg}deg)`;
+            document.querySelector('.minute-hand').style.transform = `rotate(${minuteDeg}deg)`;
+            document.querySelector('.second-hand').style.transform = `rotate(${secondDeg}deg)`;
+        }
+
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
